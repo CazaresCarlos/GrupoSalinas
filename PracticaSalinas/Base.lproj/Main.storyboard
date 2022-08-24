@@ -3,7 +3,6 @@
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
-        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -283,9 +282,8 @@ Real Estate</string>
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ccA-P0-4DT">
+                            <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ccA-P0-4DT">
                                 <rect key="frame" x="51" y="636" width="278" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
@@ -293,7 +291,7 @@ Real Estate</string>
                                     <backgroundConfiguration key="background" cornerRadius="132"/>
                                 </buttonConfiguration>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Crea tu cuenta" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l38-mK-cmh">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Crea tu cuenta" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l38-mK-cmh">
                                 <rect key="frame" x="24" y="212" width="173" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <nil key="textColor"/>
@@ -305,81 +303,70 @@ Real Estate</string>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="           Name" borderStyle="bezel" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EM3-4m-Wp3">
-                                <rect key="frame" x="24" y="325" width="327" height="70"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EM3-4m-Wp3">
+                                <rect key="frame" x="24" y="325.33333333333331" width="327" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="327" id="KpB-BP-jeM"/>
+                                    <constraint firstAttribute="height" constant="70" id="Xbb-If-KnU"/>
+                                </constraints>
                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="           Email" borderStyle="bezel" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jgs-hZ-NcB">
-                                <rect key="frame" x="24" y="409" width="327" height="70"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Om9-66-FcN">
+                                <rect key="frame" x="24" y="503" width="327" height="71"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="71" id="gH2-vc-ZlZ"/>
+                                    <constraint firstAttribute="width" constant="327" id="ljP-Et-2Br"/>
+                                </constraints>
                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2en-gl-BNA">
-                                <rect key="frame" x="38" y="427" width="30" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <imageReference key="image" image="mail" catalog="system" symbolScale="large" renderingMode="hierarchical-single">
-                                    <hierarchicalColors>
-                                        <color white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <color systemColor="secondaryLabelColor"/>
-                                        <color systemColor="tertiaryLabelColor"/>
-                                    </hierarchicalColors>
-                                </imageReference>
-                            </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="         Password" borderStyle="bezel" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Om9-66-FcN">
-                                <rect key="frame" x="24" y="504" width="327" height="70"/>
-                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ves-dX-q63">
-                                <rect key="frame" x="34" y="512" width="30" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <imageReference key="image" image="lock" catalog="system" symbolScale="large" renderingMode="hierarchical-single">
-                                    <hierarchicalColors>
-                                        <color white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <color systemColor="secondaryLabelColor"/>
-                                        <color systemColor="tertiaryLabelColor"/>
-                                    </hierarchicalColors>
-                                </imageReference>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qDP-cx-BNq">
-                                <rect key="frame" x="36" y="341.66666666666674" width="30" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <imageReference key="image" image="person" catalog="system" symbolScale="large" renderingMode="hierarchical-single">
-                                    <hierarchicalColors>
-                                        <color white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <color systemColor="secondaryLabelColor"/>
-                                        <color systemColor="tertiaryLabelColor"/>
-                                    </hierarchicalColors>
-                                </imageReference>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3gZ-G6-gXW">
-                                <rect key="frame" x="216" y="593" width="135" height="25"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3gZ-G6-gXW">
+                                <rect key="frame" x="216" y="587" width="135" height="31"/>
                                 <color key="tintColor" systemColor="labelColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Show password"/>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jgs-hZ-NcB">
+                                <rect key="frame" x="24" y="409.33333333333331" width="327" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="327" id="qOO-3D-XvI"/>
+                                    <constraint firstAttribute="height" constant="70" id="vpX-aW-4kZ"/>
+                                </constraints>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Hc0-Ei-mbf"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="l38-mK-cmh" firstAttribute="top" secondItem="Hc0-Ei-mbf" secondAttribute="top" constant="124" id="5Ie-Pb-bBG"/>
                             <constraint firstItem="Hc0-Ei-mbf" firstAttribute="trailing" secondItem="wxf-M0-kN0" secondAttribute="trailing" constant="212" id="5QW-Tt-1nu"/>
+                            <constraint firstItem="Hc0-Ei-mbf" firstAttribute="trailing" secondItem="ccA-P0-4DT" secondAttribute="trailing" constant="46" id="79t-hx-ydk"/>
                             <constraint firstItem="EM3-4m-Wp3" firstAttribute="leading" secondItem="Hc0-Ei-mbf" secondAttribute="leading" constant="24" id="9L7-mh-1Fg"/>
                             <constraint firstItem="l38-mK-cmh" firstAttribute="leading" secondItem="Hc0-Ei-mbf" secondAttribute="leading" constant="24" id="9gt-0G-OXf"/>
+                            <constraint firstItem="3gZ-G6-gXW" firstAttribute="top" secondItem="Om9-66-FcN" secondAttribute="bottom" constant="13" id="F1n-4U-RCP"/>
+                            <constraint firstItem="3gZ-G6-gXW" firstAttribute="top" secondItem="Om9-66-FcN" secondAttribute="bottom" constant="13" id="FI9-Sh-DB7"/>
+                            <constraint firstItem="Om9-66-FcN" firstAttribute="top" secondItem="Jgs-hZ-NcB" secondAttribute="bottom" constant="23.670000000000002" id="Noz-GP-Fqq"/>
                             <constraint firstItem="Hc0-Ei-mbf" firstAttribute="trailing" secondItem="Om9-66-FcN" secondAttribute="trailing" constant="24" id="P8d-IV-ZKf"/>
                             <constraint firstItem="Jgs-hZ-NcB" firstAttribute="leading" secondItem="Hc0-Ei-mbf" secondAttribute="leading" constant="24" id="QYu-10-3Nt"/>
+                            <constraint firstItem="3gZ-G6-gXW" firstAttribute="leading" secondItem="Hc0-Ei-mbf" secondAttribute="leading" constant="216" id="Yf8-UL-jfZ"/>
+                            <constraint firstItem="Jgs-hZ-NcB" firstAttribute="top" secondItem="EM3-4m-Wp3" secondAttribute="bottom" constant="14" id="ZIE-xf-PYp"/>
                             <constraint firstItem="wxf-M0-kN0" firstAttribute="leading" secondItem="Hc0-Ei-mbf" secondAttribute="leading" constant="24" id="aR5-C8-qRx"/>
+                            <constraint firstItem="Hc0-Ei-mbf" firstAttribute="trailing" secondItem="3gZ-G6-gXW" secondAttribute="trailing" constant="24" id="aRm-8q-d1X"/>
+                            <constraint firstItem="3gZ-G6-gXW" firstAttribute="top" secondItem="Om9-66-FcN" secondAttribute="bottom" constant="13" id="d1D-O2-942"/>
+                            <constraint firstItem="ccA-P0-4DT" firstAttribute="leading" secondItem="Hc0-Ei-mbf" secondAttribute="leading" constant="51" id="foZ-xA-oka"/>
                             <constraint firstItem="wxf-M0-kN0" firstAttribute="top" secondItem="l38-mK-cmh" secondAttribute="bottom" constant="20" id="gqr-ER-QKh"/>
                             <constraint firstItem="Hc0-Ei-mbf" firstAttribute="trailing" secondItem="EM3-4m-Wp3" secondAttribute="trailing" constant="24" id="lCV-Kg-fDg"/>
                             <constraint firstItem="Hc0-Ei-mbf" firstAttribute="trailing" secondItem="l38-mK-cmh" secondAttribute="trailing" constant="178" id="slt-6I-I8R"/>
+                            <constraint firstItem="ccA-P0-4DT" firstAttribute="top" secondItem="3gZ-G6-gXW" secondAttribute="bottom" constant="18" id="stD-F2-YAe"/>
                             <constraint firstItem="Hc0-Ei-mbf" firstAttribute="trailing" secondItem="Jgs-hZ-NcB" secondAttribute="trailing" constant="24" id="ttf-in-6cG"/>
                             <constraint firstItem="EM3-4m-Wp3" firstAttribute="top" secondItem="wxf-M0-kN0" secondAttribute="bottom" constant="50" id="yPP-Hu-mVA"/>
                             <constraint firstItem="Om9-66-FcN" firstAttribute="leading" secondItem="Hc0-Ei-mbf" secondAttribute="leading" constant="24" id="zce-yd-dZa"/>
+                            <constraint firstItem="Hc0-Ei-mbf" firstAttribute="bottom" secondItem="ccA-P0-4DT" secondAttribute="bottom" constant="111" id="zwh-hD-HY4"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="9Bs-Ze-kTJ"/>
@@ -396,14 +383,8 @@ Real Estate</string>
         <image name="Frame 1" width="271" height="272"/>
         <image name="Mask group" width="223" height="210"/>
         <image name="WhatsApp Image 2022-08-23 at 12.22.07 PM" width="591" height="1280"/>
-        <image name="lock" catalog="system" width="128" height="128"/>
-        <image name="mail" catalog="system" width="128" height="93"/>
-        <image name="person" catalog="system" width="128" height="117"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="secondaryLabelColor">
-            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="secondarySystemBackgroundColor">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
