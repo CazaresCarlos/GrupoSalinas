@@ -16,6 +16,8 @@
 		18301CEF28B52737005960DC /* PracticaSalinasTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18301CEE28B52737005960DC /* PracticaSalinasTests.swift */; };
 		18301CF928B52737005960DC /* PracticaSalinasUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18301CF828B52737005960DC /* PracticaSalinasUITests.swift */; };
 		18301CFB28B52737005960DC /* PracticaSalinasUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18301CFA28B52737005960DC /* PracticaSalinasUITestsLaunchTests.swift */; };
+		188BFE0628B6DF97004A21B4 /* Registro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188BFE0528B6DF97004A21B4 /* Registro.swift */; };
+		18F71ECB28B7C16000851C09 /* FrasePalindromo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F71ECA28B7C16000851C09 /* FrasePalindromo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		18301CF428B52737005960DC /* PracticaSalinasUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PracticaSalinasUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		18301CF828B52737005960DC /* PracticaSalinasUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticaSalinasUITests.swift; sourceTree = "<group>"; };
 		18301CFA28B52737005960DC /* PracticaSalinasUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticaSalinasUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		188BFE0528B6DF97004A21B4 /* Registro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Registro.swift; sourceTree = "<group>"; };
+		18F71ECA28B7C16000851C09 /* FrasePalindromo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrasePalindromo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +110,8 @@
 				18301CE028B52736005960DC /* Assets.xcassets */,
 				18301CE228B52736005960DC /* LaunchScreen.storyboard */,
 				18301CE528B52736005960DC /* Info.plist */,
+				188BFE0528B6DF97004A21B4 /* Registro.swift */,
+				18F71ECA28B7C16000851C09 /* FrasePalindromo.swift */,
 			);
 			path = PracticaSalinas;
 			sourceTree = "<group>";
@@ -258,9 +264,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				188BFE0628B6DF97004A21B4 /* Registro.swift in Sources */,
 				18301CDC28B52732005960DC /* ViewController.swift in Sources */,
 				18301CD828B52732005960DC /* AppDelegate.swift in Sources */,
 				18301CDA28B52732005960DC /* SceneDelegate.swift in Sources */,
+				18F71ECB28B7C16000851C09 /* FrasePalindromo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
