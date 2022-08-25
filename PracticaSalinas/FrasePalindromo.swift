@@ -15,7 +15,9 @@ class FrasePalindromo: UIViewController {
     @IBOutlet weak var EtiquetaConfirmación: UILabel!
     
     @IBAction func BotonAnalisar(_ sender: Any) {
-        let Frase = FraseText.text ?? ""
+        var Frase = FraseText.text?.lowercased() ?? ""
+        Frase = Frase.replacingOccurrences(of: " ", with: "")
+        
         let FraseInversa = String(Frase.reversed())
         
         if (Frase == FraseInversa){
