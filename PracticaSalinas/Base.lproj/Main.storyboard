@@ -468,10 +468,19 @@ Real Estate</string>
                                     <action selector="BotonAnalisar:" destination="Fxp-lZ-2ST" eventType="touchUpInside" id="RjR-dE-AqH"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="veB-1O-Xs5">
+                                <rect key="frame" x="150" y="658" width="109" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Avanza"/>
+                                <connections>
+                                    <segue destination="OGL-Wc-tdB" kind="show" id="z0T-yu-ZbP"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="nmK-dz-U2k"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="veB-1O-Xs5" firstAttribute="leading" secondItem="nmK-dz-U2k" secondAttribute="leading" constant="150" id="8yj-IB-N8H"/>
                             <constraint firstItem="nmK-dz-U2k" firstAttribute="trailing" secondItem="rvw-Rs-El1" secondAttribute="trailing" constant="52" id="Cxk-Za-3Eq"/>
                             <constraint firstItem="qWN-lF-muk" firstAttribute="leading" secondItem="nmK-dz-U2k" secondAttribute="leading" constant="47" id="DrK-xG-AGb"/>
                             <constraint firstItem="r19-RP-Iop" firstAttribute="top" secondItem="rvw-Rs-El1" secondAttribute="bottom" constant="95" id="Gtk-MF-nYf"/>
@@ -482,9 +491,11 @@ Real Estate</string>
                             <constraint firstItem="nmK-dz-U2k" firstAttribute="bottom" secondItem="qWN-lF-muk" secondAttribute="bottom" constant="178" id="Vz4-X8-L6k"/>
                             <constraint firstItem="lQ1-gQ-6bM" firstAttribute="leading" secondItem="nmK-dz-U2k" secondAttribute="leading" id="WY1-yJ-vfI"/>
                             <constraint firstItem="nmK-dz-U2k" firstAttribute="trailing" secondItem="r19-RP-Iop" secondAttribute="trailing" constant="52" id="g3f-hA-WpE"/>
+                            <constraint firstItem="veB-1O-Xs5" firstAttribute="centerX" secondItem="qWN-lF-muk" secondAttribute="centerX" id="iwf-uZ-9ba"/>
                             <constraint firstItem="lQ1-gQ-6bM" firstAttribute="top" secondItem="Btm-6O-IDJ" secondAttribute="top" constant="84.329999999999998" id="k1o-m3-3is"/>
                             <constraint firstItem="rvw-Rs-El1" firstAttribute="top" secondItem="lQ1-gQ-6bM" secondAttribute="bottom" constant="75" id="kMl-WN-Eqg"/>
                             <constraint firstItem="qWN-lF-muk" firstAttribute="top" secondItem="r19-RP-Iop" secondAttribute="bottom" constant="221" id="kTA-Oo-1Sl"/>
+                            <constraint firstItem="veB-1O-Xs5" firstAttribute="top" secondItem="qWN-lF-muk" secondAttribute="bottom" constant="58" id="mw2-pk-URQ"/>
                             <constraint firstItem="qWN-lF-muk" firstAttribute="top" secondItem="r19-RP-Iop" secondAttribute="bottom" constant="221" id="oi2-89-f5e"/>
                             <constraint firstItem="rvw-Rs-El1" firstAttribute="top" secondItem="lQ1-gQ-6bM" secondAttribute="bottom" constant="75" id="om8-Ks-pn8"/>
                             <constraint firstItem="r19-RP-Iop" firstAttribute="top" secondItem="rvw-Rs-El1" secondAttribute="bottom" constant="95" id="xPW-rs-srG"/>
@@ -499,6 +510,22 @@ Real Estate</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U6A-oY-5Qz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3957.5999999999999" y="82.758620689655174"/>
+        </scene>
+        <!--Problemas-->
+        <scene sceneID="Q7E-RS-ScN">
+            <objects>
+                <viewController id="OGL-Wc-tdB" customClass="Problemas" customModule="PracticaSalinas" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4ih-vO-dwo" customClass="problemas">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="0Ka-ep-TR1"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="vmM-Pw-HkA"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IFb-Gf-Cpw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4673" y="83"/>
         </scene>
     </scenes>
     <resources>
